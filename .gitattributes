@@ -1,2 +1,32 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+#  Count the number of bases
+Brac2 = "gggtgcgacg attcattgtt ttcggacaag tggataggca accactaccg gtggattgtc".replace(" ", "")
+Brac2_upper = Brac2.upper()
+No_of_bases = len(Brac2)
+print("The bases of Brac2 will be:",Brac2_upper)
+print("The no_of_bases in Brac2:", No_of_bases)
+A=0
+T=0
+G=0
+C=0
+for i in Brac2_upper:
+ if i == "A":
+  A += 1
+ if i == "T":
+  T += 1
+ if i == "G":
+  G += 1
+ if i == "C":
+  C += 1
+print()
+print("The number of A bases in Brac2:", A)
+print("The number of T bases in Brac2:", T)
+print("The number of G bases in Brac2:", G)
+print("The number of C bases in Brac2:", C)
+percentage_of_A = (A / No_of_bases)*100
+print ("The Percentage of A bases in Brac2:", percentage_of_A)
+percentage_of_T = (T / No_of_bases)*100
+print ("The Percentage of T bases in Brac2:", percentage_of_T)
+percentage_of_G = (G / No_of_bases)*100
+print ("The Percentage of G bases in Brac2:", percentage_of_G)
+percentage_of_C = (C / No_of_bases)*100
+print ("The Percentage of C bases in Brac2:", percentage_of_C)
